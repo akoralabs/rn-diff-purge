@@ -12,7 +12,8 @@
   "dependencies": {
     "instabug-reactnative": "^9.1.10",
     "react": "17.0.1",
-    "react-native": "0.64.0-rc.2"
+    "react-native": "0.64.0-rc.2",
+    "react-native-reanimated": "rpavlovs/react-native-reanimated#fix/rn64"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
