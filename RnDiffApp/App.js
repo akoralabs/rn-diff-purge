@@ -7,6 +7,7 @@
  */
 
 import React from 'react';
+ import Instabug from 'instabug-reactnative';
 import type {Node} from 'react';
 import {
   SafeAreaView,
@@ -26,8 +27,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+Instabug.startWithToken('ef4dabf5cd443f9974f90c8613ec2afc', [Instabug.invocationEvent.shake]);
+
+
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
+
+  React.useEffect(() => {
+    console.log('hello world');
+}, [])
   return (
     <View style={styles.sectionContainer}>
       <Text
